@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Журнал</string>
+    <string name="widget_small_name">Журнал · пары на сегодня</string>
+    <string name="widget_medium_name">Журнал · средний балл</string>
+    <string name="widget_large_name">Журнал · оценки по предмету</string>
+    <string name="widget_small_description">Пары на сегодня</string>
+    <string name="widget_medium_description">Средний балл по всем предметам</string>
+    <string name="widget_large_description">Оценки по выбранному предмету</string>
+    <string name="widget_refresh">Обновить виджет</string>
+</resources>

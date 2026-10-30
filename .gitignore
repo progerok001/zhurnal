@@ -1,0 +1,40 @@
+# Зависимости
+node_modules/
+
+# Сервер
+server/dist/
+server/.env
+server/data/*.db
+server/data/*.db-*
+server/data/jwt-secret.txt
+server/data/*.log
+server/*.log
+
+# Android / Gradle
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+*.iml
+captures/
+
+# Сборки и резервные копии
+*.apk
+*.aab
+backups/
+dist/
+*.keystore
+*.jks
+
+# Инструменты сборки
+tools/jdk17/
+tools/android-sdk/
+tools/*.zip
+
+# ОС и редакторы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,10 @@
+{
+  "versionCode": 2,
+  "versionName": "1.0.1",
+  "apkUrl": "/api/app/download",
+  "notes": "Виджеты: пары на сегодня, средний балл и оценки по предмету. Обязательная проверка обновлений при запуске.",
+  "mandatory": true,
+  "publishedAt": "2026-10-29T15:17:12.252Z",
+  "size": 19292310,
+  "sha256": "3d52e5776dbd28c3d70974f8a6b8d4d1e7c9ee01800ac7806a73fa73fbc5a611"
+}
