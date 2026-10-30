@@ -23,6 +23,7 @@ captures/
 # Сборки и резервные копии
 *.apk
 *.aab
+*.rar
 backups/
 dist/
 *.keystore

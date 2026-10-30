@@ -19,6 +19,13 @@
 
 Дважды щёлкните **`start-server.cmd`** в корне проекта.
 
+В Linux и macOS запустите **`start-server.sh`** из терминала:
+
+```bash
+chmod +x start-server.sh   # один раз, чтобы файл стал исполняемым
+./start-server.sh
+```
+
 Скрипт сам:
 
 - проверит Node.js (нужна версия 22.5+);
@@ -262,7 +269,8 @@ npm run seed:demo      :: демо-данные (если группы IS21 ещ
 
 ```
 zhurnal/
-├─ start-server.cmd          запуск сервера
+├─ start-server.cmd          запуск сервера (Windows)
+├─ start-server.sh           запуск сервера (Linux/macOS)
 ├─ build-apk.cmd             сборка APK
 ├─ backup-db.cmd             резервная копия базы
 ├─ server/
@@ -328,13 +336,20 @@ zhurnal/
 
 ## Если что-то не работает
 
-**`Node.js не найден`** — установите Node.js 22.5+ с <https://nodejs.org/> и перезапустите `start-server.cmd`.
+**`Node.js не найден`** — установите Node.js 22.5+ с <https://nodejs.org/> и перезапустите `start-server.cmd` (Windows) или `./start-server.sh` (Linux/macOS).
 
 **`Порт 8080 занят`** — закройте старый процесс:
 
 ```bat
 netstat -ano | findstr :8080
 taskkill /PID <PID> /F
+```
+
+В Linux/macOS:
+
+```bash
+lsof -i :8080
+kill <PID>
 ```
 
 Либо задайте другой `PORT` в `server/.env` и обновите правило portmap.
